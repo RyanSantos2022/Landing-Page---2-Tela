@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>atividades</title>
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;500& display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <div class="header">
+                    <picture>
+                        <img src="./img/logo-leme.svg" alt="Logo Leme">
+                    </picture>
+                    <h2 class="secondary-title" id="h2">É um lindo dia no mar!</h2>
+                    <h1 class="primary-title">atividades</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="atividades">
+                <div class="container">
+                    <div class="card">
+                        <h2 class="secondary-title">Filtrar Atividades</h2>
+                        <form action="#" class="form">
+
+                            <div>
+                                <label class="form_label" for="nome_atividade">
+                                    Nome
+                                    da Atividade</label>
+                                <input class="form_input"
+                                    class="form_input--style" type="text"
+                                    name="nomeatividade"
+                                    placeholder="Nome da Atividade">
+                            </div>
+
+                            <div>
+                                <label class="form_label" for="tipo_atividade">
+                                    Tipo
+                                    de Atividade</label>
+                                <select required class="form_input"
+                                    name="tipo_atividade">
+                                    <option value disabled selected hidden>Tipo
+                                        de
+                                        Atividade</option>
+                                    <option value="Teste1"> Teste1</option>
+                                    <option value="Teste2">Teste2</option>
+                                    <option value="Teste3">Teste3</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="form_label" for="data_atividade">Data
+                                    da atividade</label>
+                                <input class="form_input" id="data" type="text"
+                                    name="dataatividade"
+                                    placeholder="Data Início"
+                                    onfocus="(this.type='date')">
+                                <input class="form_input" id="data" type="text"
+                                    name="dataatividade" placeholder="Data Fim"
+                                    onfocus="(this.type='date')">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table">
+                <div class="container">
+                    <table class="table_area">
+                        <tr>
+                            <th></th>
+                            <th class="table_th">Nome</th>
+                            <th class="table_th">Tipo</th>
+                            <th class="table_th">Data</th>
+                            <th class="table_th">Vagas Disponiveis</th>
+                        </tr>
+                        <tr class="table_tr">
+                            <td> <img class="table_img"
+                                    src="./img/Salto-redimensionado.png"
+                                    alt="Trilha em Morretes"></td>
+                            <td>Trilha em Morretes</td>
+                            <td>Passeio</td>
+                            <td>03/09/2021</td>
+                            <td>3 vagas disponiveis</td>
+                            <td>Ver Detalhes</td>
+                        </tr>
+                        <tr class="table_tr">
+                            <td><img class="table_img"
+                                    src="./img/Volei de praia.-redimensionadojpg.png"
+                                    alt="Volei de Praia"></td>
+                            <td>Volei de Praia</td>
+                            <td>Esporte</td>
+                            <td>07/09/2021</td>
+                            <td>1 vaga disponivel</td>
+                            <td>Ver Detalhes</td>
+                        </tr>
+
+                        <tr class="table_tr">
+                            <td><img class="table_img"
+                                    src="./img/Mergulho-redimensionado.png"
+                                    alt="Mergulho na Lagoa Azul"></td>
+                            <td>Mergulho Lagoa Azul</td>
+                            <td>Atividades</td>
+                            <td>07/09/2021</td>
+                            <td>Esgotado</td>
+                            <td>Esgotado</td>
+                        </tr>
+
+                        <tr class="table_tr">
+                            <td><img class="table_img"
+                                    src="./img/Basquete-redimensionado.png"
+                                    alt="Campeonato de Basquete"></td>
+                            <td>Campeonato de Basquete</td>
+                            <td>Esporte</td>
+                            <td>11/09/2021</td>
+                            <td>7 vagas disponiveis</td>
+                            <td>Ver Detalhes</td>
+                        </tr>
+
+                        <tr class="table_tr">
+                            <td><img class="table_img"
+                                    src="./img/passeio de barco - redimensionado.png"
+                                    alt="Passerio de Barco"></td>
+                            <td>Passerio de Barco Ilha do Mel</td>
+                            <td>Passeio</td>
+                            <td>23/09/2021</td>
+                            <td>Esgotado</td>
+                            <td>Esgotado</td>
+                        </tr>
+
+                        <tr class="table_tr">
+                            <td><img class="table_img"
+                                    src="./img/surf-redimensionado.png"
+                                    alt="Surf em Matinhos"></td>
+                            <td>Surf em Matinhos</td>
+                            <td>Atividade</td>
+                            <td>29/09/2021</td>
+                            <td>20 vagas disponiveis</td>
+                            <td>Ver Detalhes</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; LEME Inteligência Forense - Todos os direitos reservados 2021</p>
+        </footer>
+
+    </body>
+
+</html>
