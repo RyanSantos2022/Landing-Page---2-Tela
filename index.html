@@ -7,11 +7,11 @@
         <title>Atividades</title>
         <link rel="icon" href="./img/favicon.png">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./global.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;500& display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;500& display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -36,7 +36,7 @@
                         <h2 class="secondary-title">Filtrar Atividades</h2>
                         <form action="#" class="form">
 
-                            <div>
+                            <div class="form_group">
                                 <label class="form_label" for="nome_atividade">
                                     Nome
                                     da Atividade</label>
@@ -46,7 +46,7 @@
                                     placeholder="Nome da Atividade">
                             </div>
 
-                            <div>
+                            <div class="form_group">
                                 <label class="form_label" for="tipo_atividade">
                                     Tipo
                                     de Atividade</label>
@@ -61,21 +61,30 @@
                                 </select>
                             </div>
 
-                            <div>
+                            <div class="for">
                                 <label class="form_label" for="data_atividade">
                                     Data da atividade
                                 </label>
-                                <input id="data_atividade"
-                                    class="form_input data " type="text"
-                                    name="dataatividade"
-                                    placeholder="Data Início"
-                                    onfocus="(this.type='date')">
-                                <input class="form_input  data" type="text"
-                                    name="dataatividade" placeholder="Data Fim"
-                                    onfocus="(this.type='date')">
+                                <div class="container_data">
+                                    <input id="data_atividade"
+                                        class="form_input data " type="text"
+                                        name="dataatividade"
+                                        placeholder="Data Início"
+                                        onfocus="(this.type='date')">
+
+                                    <div class="data__box">
+                                        <span class="data__separador">Até</span>
+                                    </div>
+
+                                    <input class="form_input  data" type="text"
+                                        name="dataatividade"
+                                        placeholder="Data Fim"
+                                        onfocus="(this.type='date')">
+                                </div>
                             </div>
                             <div class="switch_vagas_disponiveis">
-                                <label id="vagas" for="vagas_disponiveis">Vagas Disponiveis</label>
+                                <label id="vagas" for="vagas_disponiveis">Vagas
+                                    Disponiveis</label>
 
                                 <label class="switch">
                                     <input type="checkbox">
@@ -89,79 +98,109 @@
 
             <section class="table">
                 <div class="container">
-                    <table class="table_area">
-                        <tr>
-                            <th></th>
-                            <th class="table_th">Nome</th>
-                            <th class="table_th">Tipo</th>
-                            <th class="table_th">Data</th>
-                            <th class="table_th">Vagas Disponiveis</th>
-                        </tr>
-                        <tr class="table_tr">
-                            <td> <div class="table_img">
-                                <img src="./img/Salto-redimensionado.png" alt="Trilha em Morretes">
-                            </div></td>
-                            <td>Trilha em Morretes</td>
-                            <td> <span class="badge badge_green">Passeio</span></td>
-                            <td>03/09/2021</td>
-                            <td>3 vagas disponiveis</td>
-                            <td>Ver Detalhes</td>
-                        </tr>
-                        <tr class="table_tr">
-                            <td><div class="table_img">
-                                <img src="./img/Volei de praia.-redimensionadojpg.png" alt="Volei de Praia">
-                            </div></td>
-                            <td>Volei de Praia</td>
-                            <td><span class="badge badge_blue">Esporte</span></td>
-                            <td>07/09/2021</td>
-                            <td>1 vaga disponivel</td>
-                            <td>Ver Detalhes</td>
-                        </tr>
+                    <div class="table_responsive">
+                        <table class="table_area">
+                            <tr>
+                                <th></th>
+                                <th class="table_th">Nome</th>
+                                <th class="table_th">Tipo</th>
+                                <th class="table_th">Data</th>
+                                <th class="table_th">Vagas Disponiveis</th>
+                            </tr>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/Salto-redimensionado.png"
+                                            alt="Trilha em Morretes">
+                                    </div>
+                                </td>
+                                <td>Trilha em Morretes</td>
+                                <td> <span class="badge badge_green">Passeio</span></td>
+                                <td>03/09/2021</td>
+                                <td>3 vagas disponiveis</td>
+                                <td><a class="btn_detalhes" href="#">Ver
+                                        Detalhes</a></td>
+                            </tr>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/Volei de praia.-redimensionadojpg.png"
+                                            alt="Volei de Praia">
+                                    </div>
+                                </td>
+                                <td>Volei de Praia</td>
+                                <td><span class="badge badge_blue">Esporte</span></td>
+                                <td>07/09/2021</td>
+                                <td>1 vaga disponivel</td>
+                                <td><a class="btn_detalhes" href="#">Ver
+                                        Detalhes</a></td>
+                            </tr>
 
-                        <tr class="table_tr">
-                            <td><div class="table_img">
-                                <img src="./img/Mergulho-redimensionado.png" alt="Mergulho na Lagoa Azul">
-                            </div></td>
-                            <td>Mergulho Lagoa Azul</td>
-                            <td><span class="badge badge_red">Atividades</span></td>
-                            <td>07/09/2021</td>
-                            <td>Esgotado</td>
-                            <td>Esgotado</td>
-                        </tr>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/Mergulho-redimensionado.png"
+                                            alt="Mergulho na Lagoa Azul">
+                                    </div>
+                                </td>
+                                <td>Mergulho Lagoa Azul</td>
+                                <td><span class="badge badge_red">Atividades</span></td>
+                                <td>07/09/2021</td>
+                                <td>Esgotado</td>
+                                <td> <a class="btn_esgotado" href="#">Esgotado</a></td>
+                            </tr>
 
-                        <tr class="table_tr">
-                            <td><div class="table_img">
-                                <img src="./img/Basquete-redimensionado.png" alt="Campeonato de Basquete">
-                            </div></td>
-                            <td>Campeonato de Basquete</td>
-                            <td><span class="badge badge_blue">Esporte</span></td>
-                            <td>11/09/2021</td>
-                            <td>7 vagas disponiveis</td>
-                            <td>Ver Detalhes</td>
-                        </tr>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/Basquete-redimensionado.png"
+                                            alt="Campeonato de Basquete">
+                                    </div>
+                                </td>
+                                <td>Campeonato de Basquete</td>
+                                <td><span class="badge badge_blue">Esporte</span></td>
+                                <td>11/09/2021</td>
+                                <td>7 vagas disponiveis</td>
+                                <td><a class="btn_detalhes" href="#">Ver
+                                        Detalhes</a></td>
+                            </tr>
 
-                        <tr class="table_tr">
-                            <td><div class="table_img">
-                                <img  src="./img/passeio de barco - redimensionado.png" alt="Passerio de Barco">
-                            </div></td>
-                            <td>Passerio de Barco Ilha do Mel</td>
-                            <td><span class="badge badge_green">Passeio</span></td>
-                            <td>23/09/2021</td>
-                            <td>Esgotado</td>
-                            <td>Esgotado</td>
-                        </tr>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/passeio de barco - redimensionado.png"
+                                            alt="Passerio de Barco">
+                                    </div>
+                                </td>
+                                <td>Passerio de Barco Ilha do Mel</td>
+                                <td><span class="badge badge_green">Passeio</span></td>
+                                <td>23/09/2021</td>
+                                <td>Esgotado</td>
+                                <td> <a class="btn_esgotado" href="#">Esgotado</a></td>
+                            </tr>
 
-                        <tr class="table_tr">
-                            <td><div class="table_img">
-                                <img src="./img/surf-redimensionado.png" alt="Surf em Matinhos">
-                            </div></td>
-                            <td>Surf em Matinhos</td>
-                            <td><span class="badge badge_red">Atividade</span></td>
-                            <td>29/09/2021</td>
-                            <td>20 vagas disponiveis</td>
-                            <td>Ver Detalhes</td>
-                        </tr>
-                    </table>
+                            <tr class="table_tr">
+                                <td>
+                                    <div class="table_img">
+                                        <img class="table_img--style"
+                                            src="./img/surf-redimensionado.png"
+                                            alt="Surf em Matinhos">
+                                    </div>
+                                </td>
+                                <td>Surf em Matinhos</td>
+                                <td><span class="badge badge_red">Atividade</span></td>
+                                <td>29/09/2021</td>
+                                <td>20 vagas disponiveis</td>
+                                <td><a class="btn_detalhes" href="#">Ver
+                                        Detalhes</a></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </section>
 
