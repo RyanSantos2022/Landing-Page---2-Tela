@@ -101,6 +101,18 @@
     }
 }
 
+.container_data {
+    display: flex;
+    align-items: stretch;
+
+}
+
+@media(max-width: 768px){
+    .container_data {
+        flex-direction: column;
+    }
+}
+
 .data__separador {
     background-color: var(--leme-blue);
     font-size: var(--fs-300-13);
